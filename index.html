@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Live HTML, CSS and JavaScript playground in the browser." />
   <title>Code Editor</title>
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="style.css">
@@ -13,24 +14,24 @@
   <div class="con">
     <div class="left">
       <div class="content">
-        <label>HTML</label>
-        <textarea id="html" placeholder="Write HTML code here..."></textarea>
-        <button class="copy-btn" onclick="copyToClipboard('html')">Copy HTML</button>
+        <label for="html">HTML</label>
+        <textarea id="html" spellcheck="false" placeholder="Write HTML code here..."></textarea>
+        <button class="copy-btn" data-target="html">Copy HTML</button>
       </div>
       <div class="content">
-        <label>CSS</label>
-        <textarea id="css" placeholder="Write CSS code here..."></textarea>
-        <button class="copy-btn" onclick="copyToClipboard('css')">Copy CSS</button>
+        <label for="css">CSS</label>
+        <textarea id="css" spellcheck="false" placeholder="Write CSS code here..."></textarea>
+        <button class="copy-btn" data-target="css">Copy CSS</button>
       </div>
       <div class="content">
-        <label>JavaScript</label>
-        <textarea id="js" placeholder="Write JavaScript code here..."></textarea>
-        <button class="copy-btn" onclick="copyToClipboard('js')">Copy JavaScript</button>
+        <label for="js">JavaScript</label>
+        <textarea id="js" spellcheck="false" placeholder="Write JavaScript code here..."></textarea>
+        <button class="copy-btn" data-target="js">Copy JavaScript</button>
       </div>
     </div>
     <div class="right">
       <label>Output</label>
-      <iframe id="output"></iframe>
+      <iframe id="output" title="Live output" sandbox="allow-scripts allow-modals"></iframe>
     </div>
   </div>
 
